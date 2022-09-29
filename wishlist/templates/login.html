@@ -6,9 +6,14 @@
 
 {% block content %}
 
-<div class="login">
+<nav class="navbar" style="background-color: #7C99AC;">
+    <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Login</span>
+    </div>
+</nav>
 
-    <h1>Login</h1>
+<div class="login" style="margin-top: 2%; margin-left: 2%; ">
+
 
     <form method="POST" action="">
         {% csrf_token %}
@@ -25,7 +30,8 @@
 
             <tr>
                 <td></td>
-                <td><input class="btn login_btn" type="submit" value="Login"></td>
+                <td><input class="btn login_btn" type="submit" value="Login"
+                        style="border-radius: 10%;border-color: black;"></td>
             </tr>
         </table>
     </form>
